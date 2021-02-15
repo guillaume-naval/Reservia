@@ -1,8 +1,4 @@
 * {
-<<<<<<< 5ed281176186447905f7e00ffa8b6f6dd269e6fa
-  margin: 0;
-  padding: 0;
-=======
 	margin: 0;
 	padding: 0;
 }
@@ -31,19 +27,40 @@ nav a:hover {
 }
 #inscription {
 	padding: 1em;
+	margin-left: 2em;
 }
 #inscription a {
 	text-decoration: none;
 	color: #0065fc;
 	font-weight: bold;
 }
-
+#logo {
+	flex: 1;
+	margin-left: 2em;
+}
 li {
 	padding: 1em;
 	color: #deebff;
 	font-style: bold;
-	list-style: none;
 }
-#logo {
->>>>>>> structure html/css
+nav a {
+	position: relative;
+	padding: 15px;
+}
+
+nav a:after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	background-color: #0065fc;
+	left: 50%;
+	top: -40%;
+	transform: translateX(-50%);
+	transition: width 0.2s;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+nav a:hover:after {
+	width: 80%;
+	opacity: 1;
 }
