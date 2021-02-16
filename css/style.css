@@ -4,7 +4,8 @@
 }
 
 body {
-	max-width: 50%;
+	display: flex;
+	flex-direction: column;
 	margin: auto;
 	font-family: "Raleway", sans-serif;
 }
@@ -71,7 +72,6 @@ nav a:hover:after {
 /* Filtres + Titres */
 
 #filters {
-	margin-top: 3em;
 	margin-left: 2em;
 	display: flex;
 	flex-direction: column;
@@ -88,18 +88,33 @@ h3 {
 	font-size: 0.8em;
 	font-weight: 400;
 }
+
+/*Search bar*/
+
 #site-search {
 	height: 2.8em;
-	border-color: #f2f2f2;
+	border: solid 2px #f2f2f2;
 }
+.grey-box-icon {
+	background-color: #f2f2f2;
+	border-radius: 5em 0 0 5em;
+}
+.icon-map {
+	height: 1em;
+	width: 1em;
+}
+
 .button {
 	border-radius: 0 1em 1em 0em;
 	border: 0;
-	padding: 0.8em;
+	padding: 1em;
 	color: white;
 	background-color: #0065fc;
 	font-weight: bold;
 }
+
+/*filters*/
+
 #buttons-filters {
 	display: flex;
 	align-items: center;
@@ -120,15 +135,13 @@ h3 {
 
 main {
 	display: flex;
-	margin-top: 1em;
+	margin-top: 10em;
 	padding: 0.5em;
 }
 
 #findings {
 	padding: 2em;
 	margin: 1em;
-	max-width: 30em;
-	max-height: 20em;
 	background-color: #f2f2f2;
 	border-radius: 0.5em;
 }
@@ -137,8 +150,6 @@ aside {
 	flex: 1;
 	margin: 1em;
 	padding: 2em;
-	max-width: 30em;
-	max-height: 20em;
 	background-color: #f2f2f2;
 	border-radius: 0.5em;
 }
@@ -151,7 +162,7 @@ aside {
 footer {
 	position: fixed;
 	bottom: 0;
-	min-width: 50%;
+	min-width: 100%;
 	display: flex;
 	justify-content: space-evenly;
 	background-color: #f2f2f2;
