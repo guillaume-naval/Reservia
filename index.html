@@ -1,107 +1,232 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		   
-		<meta charset="utf-8" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="css/style.css" />
-		<title>Reservia</title>
-		   
-	</head>
+    <div id="wrapper">
+        <head>
+               
+            <meta charset="utf-8" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" />
+            <link
+                href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+                rel="stylesheet"
+            />
+            <link rel="stylesheet" href="css/style.css" />
+            <title>Reservia</title>
+               
+        </head>
 
-	<body>
-		<!-- Header -->
-		<header>
-			<div id="logo">
-				<a href="index.html"
-					><img src="images/logo/Reservia.svg" alt="logo Reservia"
-				/></a>
-			</div>
-			<nav>
-				<ul>
-					<li><a href="#">Hébergements</a></li>
-					<li><a href="#">Activités</a></li>
-				</ul>
-			</nav>
-			<div id="inscription"><a href="#">S'inscrire</a></div>
-		</header>
+        <body>
+            <!-- Header -->
+            <header>
+                <div id="logo">
+                    <a href="index.html"
+                        ><img src="images/logo/Reservia.svg" alt="logo Reservia"
+                    /></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Hébergements</a></li>
+                        <li><a href="#">Activités</a></li>
+                    </ul>
+                </nav>
+                <div id="inscription"><a href="#">S'inscrire</a></div>
+            </header>
 
-		<!--  Recherche et filtres -->
-		<section id="filters">
-			<h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-			<h3>En plein centre ville ou en pleine nature</h3>
+            <!--  Recherche et filtres -->
+            <section id="filters">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h3>En plein centre ville ou en pleine nature</h3>
 
-			<div id="search">
-				<label class="grey-box-icon">
-					<img class="icon-black" src="images/icons/map-marker.svg" />
-				</label>
-				<input type="text" id="site-search" placeholder="Marseille, France" />
-				<button class="button">Rechercher</button>
-			</div>
+                <div id="search">
+                    <label class="grey-box-icon">
+                        <img class="icon-black" src="images/icons/map-marker.svg" />
+                    </label>
+                    <input type="text" id="site-search" placeholder="Marseille, France" />
+                    <button class="button">Rechercher</button>
+                </div>
 
-			<div id="buttons-filters">
-				<h2>Filtres</h2>
-				<button id="filtre1" class="button-filter">
-					<label class="blue-circle-icon">
-						<img class="icon-svg" src="images/icons/money.svg" /> </label
-					>Économique</button
-				><button id="filtre2" class="button-filter">
-					<label class="blue-circle-icon">
-						<img class="icon-svg" src="images/icons/child.svg" /> </label
-					>Familiale</button
-				><button id="filtre3" class="button-filter">
-					<label class="blue-circle-icon">
-						<img class="icon-svg" src="images/icons/heart.svg" /> </label
-					>Romantique
-				</button>
-				<button id="filtre4" class="button-filter">
-					<label class="blue-circle-icon">
-						<img class="icon-svg" src="images/icons/dog-solid.svg" /> </label
-					>Animaux autorisés
-				</button>
-			</div>
+                <div id="buttons-filters">
+                    <h2>Filtres</h2>
+                    <button id="filtre1" class="button-filter">
+                        <label class="blue-circle-icon">
+                            <img class="icon-svg" src="images/icons/money.svg" />
+                        </label>
+                        <div class="txt-filtre">Économique</div></button
+                    ><button class="button-filter">
+                        <label class="blue-circle-icon">
+                            <img class="icon-svg" src="images/icons/child.svg" />
+                        </label>
+                        <div class="txt-filtre">Familial</div></button
+                    ><button id="filtre3" class="button-filter">
+                        <label class="blue-circle-icon">
+                            <img class="icon-svg" src="images/icons/heart.svg" />
+                        </label>
+                        <div class="txt-filtre">Romantique</div>
+                    </button>
+                    <button id="filtre4" class="button-filter">
+                        <label class="blue-circle-icon">
+                            <img class="icon-svg" src="images/icons/dog-solid.svg" />
+                        </label>
+                        <div class="txt-filtre">Animaux autorisés</div>
+                    </button>
+                </div>
 
-			<h3>Plus de 500 logements sont disponibles dans cette ville</h3>
-		</section>
+                <h3>
+                    <label class="circle-info">
+                        <img class="icon-info" src="images/icons/info.svg" /></label
+                    >Plus de 500 logements sont disponibles dans cette ville
+                </h3>
+            </section>
 
-		<!--  Hébergements (accommodations) -->
-		<main>
-			<!-- Résultats hébergements (findings) -->
-			<section id="findings">
-				<h1>Hébergements à Marseille</h1>
-				<br />
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quas
-					consectetur praesentium excepturi vel incidunt atque. Quibusdam illo
-					esse hic sint ipsam, necessitatibus ea, sed, explicabo cumque eligendi
-					dolore suscipit.
-				</p>
-			</section>
+            <main>
+                <!--  Hébergements (accommodations) -->
 
-			<!-- Aside popular -->
-			<aside id="popular">
-				<h1>Les plus populaires</h1>
-				<br />
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum officia
-					ut illo ab ex. Incidunt, nostrum dignissimos? Reprehenderit
-					voluptatibus laborum amet. Dolores nostrum illo harum unde quidem, ex
-					minus iusto?
-				</p>
-			</aside>
-		</main>
-		 
+                <section id="accommodations">
+                    <!-- Résultats hébergements (findings) -->
 
-		<!--  Activités  -->
-		<section id="activities">
-			<h1>Activités à Marseille</h1>
-		</section>
+                    <section id="findings">
+                        <h1>Hébergements à Marseille</h1>
+                        <div id="all-card-findings">
+                            <section class="card-grp">
+                                <img
+                                    class="card-img"
+                                    src="images/hebergements/4_small/la_cannebiere.jpg"
+                                    alt="Auberge La Cannebière"
+                                />
+                                <div class="card-content">
+                                    <h2 class="card-txt">Auberge la Cannebière</h2>
+                                    <h3 class="card-txt">Nuit à partir de <strong>25€</strong></h3>
 
+                                    <div class="card-stars">
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="greystar" src="images/icons/star.svg" />
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="card-grp">
+                                <img
+                                    class="card-img"
+                                    src="images/hebergements/4_small/du_port.jpg"
+                                    alt="Hôtel du port"
+                                />
+                                <div class="card-content">
+                                    <h2 class="card-txt">Hôtel du port</h2>
+                                    <h3 class="card-txt">Nuit à partir de <strong>52€</strong></h3>
+
+                                    <div class="card-stars">
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="card-grp">
+                                <img
+                                    class="card-img"
+                                    src="images/hebergements/4_small/les_mouettes.jpg"
+                                    alt="Hôtel Les mouettes"
+                                />
+                                <div class="card-content">
+                                    <h2 class="card-txt">Hôtel Les mouettes</h2>
+                                    <h3 class="card-txt">Nuit à partir de <strong>76€</strong></h3>
+
+                                    <div class="card-stars">
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="greystar" src="images/icons/star.svg" />
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="card-grp">
+                                <img
+                                    class="card-img"
+                                    src="images/hebergements/4_small/de_la_mer.jpg"
+                                    alt="Hôtel de la mer"
+                                />
+                                <div class="card-content">
+                                    <h2 class="card-txt">Hôtel de la mer</h2>
+                                    <h3 class="card-txt">Nuit à partir de <strong>46€</strong></h3>
+
+                                    <div class="card-stars">
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="greystar" src="images/icons/star.svg" />
+                                        <img class="greystar" src="images/icons/star.svg" />
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="card-grp">
+                                <img
+                                    class="card-img"
+                                    src="images/hebergements/4_small/le_panier.jpg"
+                                    alt="Auberge Le Panier"
+                                />
+                                <div class="card-content">
+                                    <h2 class="card-txt">Auberge Le Panier</h2>
+                                    <h3 class="card-txt">Nuit à partir de <strong>23€</strong></h3>
+
+                                    <div class="card-stars">
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="greystar" src="images/icons/star.svg" />
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="card-grp">
+                                <img
+                                    class="card-img"
+                                    src="images/hebergements/4_small/chez_Amina.jpg"
+                                    alt="Hôtel chez Amina"
+                                />
+                                <div class="card-content">
+                                    <h2 class="card-txt">Hôtel chez Amina</h2>
+                                    <h3 class="card-txt">Nuit à partir de <strong>96€</strong></h3>
+
+                                    <div class="card-stars">
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                        <img class="star" src="images/icons/star.svg" />
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div id="more"><a href="#"><h1>Afficher plus</h1></a></div>
+                    </section>
+
+                    <!-- Aside popular -->
+                    <aside id="popular">
+                        <h1>Les plus populaires</h1>
+                        <br />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum officia
+                            ut illo ab ex. Incidunt, nostrum dignissimos? Reprehenderit
+                            voluptatibus laborum amet. Dolores nostrum illo harum unde quidem,
+                            ex minus iusto?
+                        </p>
+                    </aside>
+                </section>
+
+                 
+                <!--  Activités  -->
+                <section id="activities">
+                    <h1>Activités à Marseille</h1>
+                </section>
+            </main>
+        </div>
 		<!-- Footer Contact  -->
 		<footer>
 			<section id="about" class="text-block">
