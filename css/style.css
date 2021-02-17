@@ -357,9 +357,124 @@ aside {
 }
 /*ACTIVITES*/
 
+#title-activities {
+	padding-bottom: 2em;
+}
 #activities {
-	padding: 3em;
-	background-color: #f2f2f2;
+	padding: 3em 0em 0em 0em;
+}
+#all-card-activities {
+	display: flex;
+	margin-bottom: 2em;
+}
+.cardv3-grp {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+	height: 27em;
+	width: 19em;
+	margin-right: 2.5em;
+	border-radius: 1em;
+	cursor: pointer;
+}
+
+.cardv3-content {
+	padding: 1em;
+	background-color: white;
+	border-radius: 0 0 1em 1em;
+}
+
+.blockv3-img {
+	border-radius: 1em 1em 0em 0em;
+	overflow: hidden;
+}
+
+.cardv3-img {
+	height: 27em;
+	width: 20em;
+	object-fit: cover;
+	object-position: -11em 0em;
+}
+
+.cardv3-txt {
+	color: black;
+	font-size: 1em;
+}
+/* Small */
+.cardv3-grp-small {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+	height: 14em;
+	width: 19em;
+	margin-right: 2.5em;
+	border-radius: 1em;
+	cursor: pointer;
+}
+
+.cardv3-small {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+	height: 14em;
+	width: 19em;
+	margin-right: 2.5em;
+	border-radius: 1em;
+	cursor: pointer;
+}
+.cardv3-smallv2 {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+	height: 10em;
+	width: 19em;
+	margin-top: 3em;
+	margin-right: 2.5em;
+	border-radius: 1em;
+	cursor: pointer;
+}
+
+.cardv3-img-small {
+	height: 20em;
+	width: 20em;
+	object-fit: cover;
+	object-position: -0em -8em;
+}
+.cardv3-img-smallv2 {
+	height: 13em;
+	width: 20em;
+	object-fit: cover;
+	object-position: -1em -1.5em;
+}
+/* Medium */
+
+.cardv3-grp-medium {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+	height: 12em;
+	width: 19em;
+	margin-right: 2.5em;
+	border-radius: 1em;
+	cursor: pointer;
+}
+.cardv3-medium {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+	height: 12em;
+	width: 19em;
+	margin-right: 2.5em;
+	border-radius: 1em;
+	cursor: pointer;
+	margin-bottom: 3em;
+}
+
+.cardv3-img-medium {
+	height: 10em;
+	width: 20em;
+	object-fit: cover;
+	object-position: -0em -1em;
 }
 
 /* FOOTER */
@@ -368,11 +483,11 @@ footer {
 	bottom: 0;
 	min-width: 100%;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-content: flex-start;
 	background-color: #f2f2f2;
-	padding-top: 2em;
-	padding-left: 4em;
+	padding-top: 3em;
+	margin-left: -8em;
 }
 .text-block {
 	margin-right: 12em;
@@ -384,7 +499,7 @@ footer {
 footer a {
 	text-decoration: none;
 	color: black;
-	font-size: 0.8em;
+	font-size: 1em;
 	margin-top: 0.5em;
 	width: 100%;
 }
