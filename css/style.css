@@ -481,7 +481,7 @@ aside {
 
 footer {
 	bottom: 0;
-	min-width: 100%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-content: flex-start;
@@ -501,5 +501,4 @@ footer a {
 	color: black;
 	font-size: 1em;
 	margin-top: 0.5em;
-	width: 100%;
 }
