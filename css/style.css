@@ -193,6 +193,13 @@ input:focus::placeholder {
 	color: black;
 	outline: none;
 	cursor: pointer;
+	transition: 0.25s;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+	box-shadow: 0 1em 0em -0.3em #0065fc75;
+	transform: translateY(-0.4em);
 }
 .txt-filtre {
 	padding: 0em 1em 0em 0.5em;
@@ -261,6 +268,12 @@ main {
 	margin: 2em 2em 0em 0em;
 	overflow: hidden;
 	cursor: pointer;
+	transition: 0.5s;
+}
+
+.card-grp:hover,
+.card-grp:focus {
+	transform: scale(1.1);
 }
 .card-content {
 	display: flex;
@@ -330,7 +343,14 @@ aside {
 	padding: 0.3em;
 	overflow: hidden;
 	cursor: pointer;
+	transition: 0.5s;
 }
+
+.cardv2-grp:hover,
+.cardv2-grp:focus {
+	transform: scale(1.05);
+}
+
 .cardv2-img {
 	border-radius: 1em 0em 0em 1em;
 	max-height: 8em;
