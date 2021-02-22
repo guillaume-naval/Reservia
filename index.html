@@ -5,6 +5,7 @@
         <head>
                
             <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link
                 href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
@@ -43,12 +44,14 @@
                         <img class="icon-black" src="images/icons/map-marker.svg" />
                     </label>
                     <input type="text" id="site-search" placeholder="Marseille, France" />
-                    <button class="button">Rechercher</button>
+                    <button class="button"><span class="search-txt">Rechercher</span>
+                        <img class="icon-search" src="images/icons/search.svg" />
+                    </button>
                 </div>
 
                 <!-- Filters -->
                 <div id="buttons-filters">
-                    <h2>Filtres</h2>
+                    <div class="filter-title"><h2>Filtres</h2></div>
                     <button id="filtre1" class="button-filter">
                         <label class="blue-circle-icon">
                             <img class="icon-svg" src="images/icons/money.svg" />
@@ -73,11 +76,12 @@
                     </button>
                 </div>
 
-                <h3>
+                <div class="infos">
                     <label class="circle-info">
                         <img class="icon-info" src="images/icons/info.svg" /></label
-                    >Plus de 500 logements sont disponibles dans cette ville
-                </h3>
+                    ><span id="info-txt"><h3>Plus de 500 logements sont disponibles dans cette ville</h3></span>
+                </div>
+                
             </section>
 
             <main>
