@@ -526,16 +526,17 @@ footer a {
 	width: 100%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 	/* Header */
 
 	header {
 		display: flex;
 		flex-wrap: wrap;
-		width: 375px;
+		justify-content: flex-start;
+		max-width: 100%;
 	}
 	#wrapper {
-		width: 375px;
+		max-width: 100%;
 		margin: 0 auto;
 	}
 	header :nth-child(2) {
@@ -544,24 +545,29 @@ footer a {
 	#inscription {
 		padding: 2em;
 	}
+	nav ul{
+		max-width: 100%;
+		padding:0em 0em 0em 0em;
+	}
 	nav li {
-		padding: 0em 5.1em 3em 0em;
+		max-width: 100%;
+		padding:0em 10em 3em 0em;
 	}
 
 	nav a:after {
 		content: "";
 		position: absolute;
 		height: 3px;
-		width: 14em;
+		width: 250px;
 		background-color: #c0c0c0;
-		left: 0%;
+		left: 10%;
 		top: 150%;
 		opacity: 1;
 		transition: opacity 0.5s ease-in-out;
-		transform: translateX(-2.5em);
+		transform: translateX(-1.5em);
 	}
 	nav a:hover:after {
-		width: 14em;
+		width: 250px;
 		opacity: 1;
 		background-color: #0065fc;
 	}
@@ -603,7 +609,7 @@ footer a {
 	
 	#filters {
 		margin-left: 1em;
-		max-width: 375px;
+		max-width: 100%;
 	}
 	#buttons-filters {
 		display: flex;
@@ -611,7 +617,7 @@ footer a {
 		padding: 1em 1em 1em 0em;
 	}
 	.filter-title {
-		padding-right: 8em;
+		padding-right: 100%;
 	}
 	.button-filter {
 		margin: 0.3em;
@@ -636,14 +642,17 @@ footer a {
 	main {
 		display: flex;
 		padding: 0;
+		width:100%;
 	}
 
 	#accommodations {
 		display: flex;
 		flex-direction: column-reverse;
+		width: 100%;
 	}
 	
 	#findings {
+		width:100%;
 		padding: 2.8em 0em 2em 1em;
 		border-radius: 1em;
 		background-color: #ffffff;
@@ -652,7 +661,7 @@ footer a {
 
 	#all-card-findings {
 		flex-direction: column;
-		max-width: 375px;
+		width:100%;
 	}
 	.card-grp{
 		margin-top:1em;
@@ -663,7 +672,7 @@ footer a {
 	}
 	.card-img {
 		max-height: 6em;
-		max-width: 375px;
+		max-width: 500px;
 	}
 
 	.card-txt {
@@ -680,7 +689,7 @@ footer a {
 
 	.cardv2-grp {
 		margin-top: 0.8em;
-		min-width: 18em;
+		width:100%;
 	}
 
 
@@ -689,7 +698,8 @@ footer a {
 	/*ACTIVITES*/
 
 	#activities {
-		padding: 2em 0em 0em 2em;
+		width:100%;
+		padding: 2em 2em 2em 0em;
 	}
 	#all-card-activities {
 		flex-direction: column;
@@ -699,7 +709,7 @@ footer a {
 	}
 	.cardv3-grp {
 		height: 12em;
-		width: 19em;	
+		width:100%;	
 		margin-bottom:1em;	
 	}
 
@@ -710,27 +720,27 @@ footer a {
 	}
 	.cardv3-img {
 		height: 12em;
-		width: 20em;
+		width:100%;	
 		object-position: -0em -1em;
 	}
 
 	/* Small */
 	.cardv3-grp-small {
 		height: 24em;
-		width: 19em;
+		width:100%;	
 		flex-direction: column;
 		margin-bottom: 2em;
 	}
 
 	.cardv3-small {
 		height: 12em;
-		width: 19em;
+		width:100%;	
 		margin-bottom: 1em;	
 	}
 
 	.cardv3-smallv2 {
 		height: 12em;
-		width: 19em;
+		width:100%;	
 		margin-top:0;
 		box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
 		margin-bottom:2em;
@@ -738,12 +748,12 @@ footer a {
 
 	.cardv3-img-small {
 		height: 12em;
-		width: 20em;
+		width:100%;	
 		object-position: -0em -1em;
 	}
 	.cardv3-img-smallv2 {
 		height: 12em;
-		width: 20em;
+		width:100%;	
 		object-position: -0em -1em;
 	}
 /* Medium */
@@ -752,7 +762,7 @@ footer a {
 		display: flex;
 		flex-direction: column;
 		height: 24em;
-		width: 19em;
+		width:100%;	
 		margin-right: 2.5em;
 		border-radius: 1em;
 		cursor: pointer;
@@ -762,7 +772,7 @@ footer a {
 		flex-direction: column;
 		box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
 		height: 12em;
-		width: 19em;
+		width:100%;	
 		margin-right: 2.5em;
 		border-radius: 2em;
 		cursor: pointer;
@@ -771,7 +781,7 @@ footer a {
 
 	.cardv3-img-medium {
 		height: 12em;
-		width: 20em;
+		width:100%;	
 		object-fit: cover;
 		object-position: -0em -1em;
 	}
@@ -781,7 +791,8 @@ footer a {
 
 footer {
 	bottom: 0;
-	min-width: 375px;
+	width:100%;
+	min-width: 100%;
 	display: flex;
 	flex-direction: column;
 	background-color: #f2f2f2;
