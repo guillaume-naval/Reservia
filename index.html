@@ -38,15 +38,17 @@
 					<label class="grey-box-icon">
 						<img class="icon-black" alt="map-marker" src="images/icons/map-marker.svg"/>
 					</label>
-					<input type="text" id="site-search" placeholder="Marseille, France" />
-					<button class="button">
-						<span class="search-txt">Rechercher</span>
-						<img class="icon-search" alt="icon-search" src="images/icons/search.svg"/>
-					</button>
+					<form method="post" action="traintement.php">
+						<input type="search" id="site-search" placeholder="Marseille, France" />
+						<button class="button" type="submit">
+							<p class="search-txt">Rechercher</p>
+							<img class="icon-search" alt="icon-search" src="images/icons/search.svg"/>
+						</button>
+					</form>
 				</div>
 
 				<!-- Filters -->
-				<div id="buttons-filters">
+				<div id="grp-filters">
 					<h2 class="filter-title">Filtres</h2>
 					<div class="button-filter">
 						<i class="blue-circle-icon">
@@ -91,13 +93,13 @@
 					<section id="findings">
 						<h2>Hébergements à Marseille</h2>
 						<div id="all-card-findings">
-							<article class="card-grp">
+							<article class="card_find-grp">
 								<img
-									class="card-img"
+									class="card_find-img"
 									src="images/hebergements/4_small/la_cannebiere.jpg"
 									alt="Auberge La Cannebière"
 								/>
-								<div class="card-content">
+								<div class="card_find-content">
 									<h2 class="card-txt">Auberge la Cannebière</h2>
 									<h3 class="card-txt">
 										Nuit à partir de <strong>25€</strong>
@@ -113,13 +115,13 @@
 								</div>
 							</article>
 
-							<article class="card-grp">
+							<article class="card_find-grp">
 								<img
-									class="card-img"
+									class="card_find-img"
 									src="images/hebergements/4_small/du_port.jpg"
 									alt="Hôtel du port"
 								/>
-								<div class="card-content">
+								<div class="card_find-content">
 									<h2 class="card-txt">Hôtel du port</h2>
 									<h3 class="card-txt">Nuit à partir de <strong>52€</strong></h3>
 
@@ -133,13 +135,13 @@
 								</div>
 							</article>
 
-							<article class="card-grp">
+							<article class="card_find-grp">
 								<img
-									class="card-img"
+									class="card_find-img"
 									src="images/hebergements/4_small/les_mouettes.jpg"
 									alt="Hôtel Les mouettes"
 								/>
-								<div class="card-content">
+								<div class="card_find-content">
 									<h2 class="card-txt">Hôtel Les mouettes</h2>
 									<h3 class="card-txt">
 										Nuit à partir de <strong>76€</strong>
@@ -154,13 +156,13 @@
 									</div>
 								</div>
 							</article>
-							<article class="card-grp">
+							<article class="card_find-grp">
 								<img
-									class="card-img"
+									class="card_find-img"
 									src="images/hebergements/4_small/de_la_mer.jpg"
 									alt="Hôtel de la mer"
 								/>
-								<div class="card-content">
+								<div class="card_find-content">
 									<h2 class="card-txt">Hôtel de la mer</h2>
 									<h3 class="card-txt">
 										Nuit à partir de <strong>46€</strong>
@@ -175,11 +177,11 @@
 									</div>
 								</div>
 							</article>
-							<article class="card-grp">
+							<article class="card_find-grp">
 								<img
-									class="card-img" src="images/hebergements/4_small/le_panier.jpg"
+									class="card_find-img" src="images/hebergements/4_small/le_panier.jpg"
 									alt="Auberge Le Panier"/>
-								<div class="card-content">
+								<div class="card_find-content">
 									<h2 class="card-txt">Auberge Le Panier</h2>
 									<h3 class="card-txt">
 										Nuit à partir de <strong>23€</strong></h3>
@@ -193,11 +195,11 @@
 									</div>
 								</div>
 							</article>
-							<article class="card-grp">
+							<article class="card_find-grp">
 								<img
-									class="card-img" src="images/hebergements/4_small/chez_Amina.jpg"
+									class="card_find-img" src="images/hebergements/4_small/chez_Amina.jpg"
 									alt="Hôtel chez Amina" />
-								<div class="card-content">
+								<div class="card_find-content">
 									<h2 class="card-txt">Hôtel chez Amina</h2>
 									<h3 class="card-txt">
 										Nuit à partir de <strong>96€</strong>
@@ -227,10 +229,10 @@
 							</label>
 						</div>
 						<div id="all-card-popular">
-							<article class="cardv2-grp">
-								<img class="cardv2-img" src="images/hebergements/4_small/le_soleil.jpg"
+							<article class="card_pop-grp">
+								<img class="card_pop-img" src="images/hebergements/4_small/le_soleil.jpg"
 									alt="Hôtel Le soleil du matin"/>
-								<div class="cardv2-content">
+								<div class="card_pop-content">
 									<h2 class="card-txt">Hôtel Le soleil du matin</h2>
 									<h3 class="card-txt">
 										Nuit à partir de <strong>128€</strong>
@@ -246,10 +248,10 @@
 								</div>
 							</article>
 
-							<article class="cardv2-grp">
-								<img class="cardv2-img" src="images/hebergements/4_small/coeur_de_leau.jpg"
+							<article class="card_pop-grp">
+								<img class="card_pop-img" src="images/hebergements/4_small/coeur_de_leau.jpg"
 									alt="Au coeur de l'eau Chambres d'hôtes" />
-								<div class="cardv2-content">
+								<div class="card_pop-content">
 									<h2 class="card-txt">Au coeur de l'eau Chambres d'hôtes</h2>
 									<h3 class="card-txt">Nuit à partir de <strong>71€</strong></h3>
 
@@ -263,11 +265,11 @@
 								</div>
 							</article>
 
-							<article class="cardv2-grp">
-								<img class="cardv2-img-tout-bleu"
+							<article class="card_pop-grp">
+								<img class="card_pop-img-tout-bleu"
 									src="images/hebergements/4_small/tout_bleu.jpg"
 									alt="Hôtel Tout bleu et Blanc" />
-								<div class="cardv2-content">
+								<div class="card_pop-content">
 									<h2 class="card-txt">Hôtel Tout bleu et Blanc</h2>
 									<h3 class="card-txt">Nuit à partir de <strong>68€</strong></h3>
 
@@ -291,68 +293,68 @@
 						<h2>Activités à Marseille</h2>
 					</div>
 					<div id="all-card-activities">
-						<article class="cardv3-grp">
-							<div class="blockv3-img">
-								<img class="cardv3-img" src="images/activites/2_large/vieux_port.jpg"
+						<article class="card_act-grp">
+							<div class="block_act-img">
+								<img class="card_act-img" src="images/activites/2_large/vieux_port.jpg"
 									alt="Vieux port" />
 							</div>
-							<div class="cardv3-content">
-								<h2 class="cardv3-txt">Vieux Port</h2>
+							<div class="card_act-content">
+								<h2 class="card_act-txt">Vieux Port</h2>
 							</div>
 						</article>
-						<article class="cardv3-grp-small">
-							<div class="cardv3-small">
-								<div class="blockv3-img">
-									<img class="cardv3-img-small"
+						<article class="card_act-grp-small">
+							<div class="card_act-small">
+								<div class="block_act-img">
+									<img class="card_act-img-small"
 										src="images/activites/3_medium/fort_de_pomegues.jpg"
 										alt="Fort de Pomègues" />
 								</div>
-								<div class="cardv3-content">
-									<h2 class="cardv3-txt">Fort de Pomègues</h2>
+								<div class="card_act-content">
+									<h2 class="card_act-txt">Fort de Pomègues</h2>
 								</div>
 							</div>
-							<div class="cardv3-smallv2">
-								<div class="blockv3-img">
-									<img class="cardv3-img-smallv2"
-										src="images/activites/3_medium/iles_du_frioul.jpg"
+							<div class="card_act-smallv2">
+								<div class="block_act-img">
+									<img class="card_act-img-smallv2"
+										src="images/activites/4_small/iles_du_frioul.jpg"
 										alt="Îles du Frioul" />
 								</div>
-								<div class="cardv3-content">
-									<h2 class="cardv3-txt">Îles du Frioul</h2>
+								<div class="card_act-content">
+									<h2 class="card_act-txt">Îles du Frioul</h2>
 								</div>
 							</div>
 						</article>
-						<article class="cardv3-grp">
-							<div class="blockv3-img">
-								<img class="cardv3-img"
+						<article class="card_act-grp">
+							<div class="block_act-img">
+								<img class="card_act-img"
 									src="images/activites/2_large/parc_national_des_calanques.jpg"
 									alt="Parc National des Calanques"
 									style="filter: brightness(130%);-webkit-filter: brightness(130%);"/>
 							</div>
-							<div class="cardv3-content">
-								<h2 class="cardv3-txt">Parc National des Calanques</h2>
+							<div class="card_act-content">
+								<h2 class="card_act-txt">Parc National des Calanques</h2>
 							</div>
 						</article>
-						<article class="cardv3-grp-medium">
-							<div class="cardv3-medium">
-								<div class="blockv3-img">
-									<img class="cardv3-img-medium"
+						<article class="card_act-grp-medium">
+							<div class="card_act-medium">
+								<div class="block_act-img">
+									<img class="card_act-img-medium"
 										src="images/activites/3_medium/notre_dame_delagarde.jpg"
 										alt="Notre-Dame-de-la-Garde" />
 								</div>
-								<div class="cardv3-content">
-									<h2 class="cardv3-txt">Notre-Dame-de-la-Garde</h2>
+								<div class="card_act-content">
+									<h2 class="card_act-txt">Notre-Dame-de-la-Garde</h2>
 								</div>
 							</div>
-							<div class="cardv3-medium">
-								<div class="blockv3-img">
+							<div class="card_act-medium">
+								<div class="block_act-img">
 									<img
-										class="cardv3-img-medium"
+										class="card_act-img-medium"
 										src="images/activites/3_medium/parc_longchamp.jpg"
 										alt="Parc Longchamp" />
 								</div>
-								<div class="cardv3-content">
-									<h2 class="cardv3-txt">Parc Longchamp</h2>
+								<div class="card_act-content">
+									<h2 class="card_act-txt">Parc Longchamp</h2>
 								</div>
 							</div>
 						</article>
@@ -362,24 +364,26 @@
 		</div>
 		<!-- Footer Contact  -->
 		<footer>
-			<section id="about" class="text-block">
-				<h2>À propos</h2>
-				<br />
-				<a href="#">Fonctionnement du site</a>
-				<a href="#">Conditions génèrales de vente</a>
-				<a href="#">Données et confidentialité</a>
-			</section>
-			<section id="lodging" class="text-block">
-				<h2>Nos hébergements</h2>
-				<br />
-				<a href="#">Charte qualité</a>
-				<a href="#">Soumettre votre hôtel</a>
-			</section>
-			<section id="support" class="text-block">
-				<h2>Assistance</h2>
-				<br />
-				<a href="#">Centre d'aide</a>
-				<a href="#">Nous contacter</a>
+			<section class="footer-links">
+				<article id="about" class="text-block">
+					<h2>À propos</h2>
+					<br />
+					<a href="#">Fonctionnement du site</a>
+					<a href="#">Conditions génèrales de vente</a>
+					<a href="#">Données et confidentialité</a>
+				</article>
+				<article id="lodging" class="text-block">
+					<h2>Nos hébergements</h2>
+					<br />
+					<a href="#">Charte qualité</a>
+					<a href="#">Soumettre votre hôtel</a>
+				</article>
+				<article id="support" class="text-block">
+					<h2>Assistance</h2>
+					<br />
+					<a href="#">Centre d'aide</a>
+					<a href="#">Nous contacter</a>
+				</article>
 			</section>
 		</footer>
 	</body>
