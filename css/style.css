@@ -21,25 +21,31 @@ header {
 	display: flex;
 	justify-content: flex-end;
 	padding: 1em 0em 0em 0em;
+	width: 100%;
 }
 nav ul {
 	list-style-type: none;
 	display: flex;
 }
+nav li {
+	padding: 2em 4em 0em 0em;
+	color: #deebff;
+	font-style: bold;
+}
 nav a {
 	color: black;
-	text-decoration: none;
+	padding-top: 1.5em;
+	border-top: 0.15em solid white;
+	transition: border-color 0.5s;
 }
 nav a:hover, nav a:focus {
 	color: #0065fc;
-	border-top: 0.2em solid #0065fc;    
+	border-top: 0.15em solid #0065fc;
 }
-
 #inscription {
-	padding: 1em 1em 0em 0em;
+	margin: 2em 5em 1em 0em;
 }
 #inscription a {
-	text-decoration: none;
 	color: #0065fc;
 	font-weight: bold;
 }
@@ -47,17 +53,12 @@ nav a:hover, nav a:focus {
 	flex: 1;
 	padding: 1em 0em 2em 2em;
 }
-li {
-	padding: 1em 4em 0em 0em;
-	color: #deebff;
-	font-style: bold;
-}
 /* FILTERS */
 #filters {
+	width: 90%;
 	margin-left: 2em;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 }
 h1 {
 	font-size: 1.4em;
@@ -147,13 +148,16 @@ input:focus::placeholder {
 	align-items: center;
 	padding: 1em 1em 1em 0em;
 	outline: none;
+	flex-wrap: wrap;
+
 }
 .button-filter {
 	display: flex;
 	align-items: center;
 	border-radius: 3em;
 	height: 2.8em;
-	margin: 1em;
+	margin-left: 1em;
+	margin-bottom:1em;
 	border: solid 0.15em #e2e2e2;
 	background-color: white;
 	font-family: inherit;
@@ -172,7 +176,6 @@ input:focus::placeholder {
 .txt-filtre {
 	padding: 0em 1em 0em 0.5em;
 }
-
 .infos {
 	display: flex;
 }
@@ -197,7 +200,6 @@ main {
 	display: flex;
 	flex-direction: row;
 }
-
 #more {
 	margin-top: 2em;
 }
@@ -209,13 +211,13 @@ main {
 	padding: 2.8em 0em 2em 2.5em;
 	border-radius: 1em;
 	background-color: #f2f2f2;
-	width: 250em;
 	margin-right: 3em;
 }
 /* Card Findings */
 #all-card-findings {
 	display: flex;
 	flex-wrap: wrap;
+	width: 53em;
 }
 .card-grp {
 	display: flex;
@@ -277,6 +279,9 @@ aside {
 	padding: 2em;
 	background-color: #f2f2f2;
 	border-radius: 1em;
+	width: 50%;
+	max-width: 20em;
+	min-width: 17em;
 }
 .icon-chart {
 	height: 1.5rem;
@@ -294,16 +299,13 @@ aside {
 	box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
 	max-height: 8em;
 	min-height: 8em;
-	min-width: 20em;
 	margin-top: 2em;
+	width: 100%;
+	min-width: 90%;
 	padding: 0.3em;
 	overflow: hidden;
 	cursor: pointer;
 	transition: 0.5s;
-}
-.cardv2-grp:hover,
-.cardv2-grp:focus {
-	transform: scale(1.05);
 }
 .cardv2-img {
 	border-radius: 1em 0em 0em 1em;
@@ -311,13 +313,17 @@ aside {
 	max-width: 8em;
 	object-fit: cover;
 }
+.cardv2-grp:hover,
+.cardv2-grp:focus {
+	transform: scale(1.05);
+}
+
 .cardv2-img-tout-bleu {
 	border-radius: 1em 0em 0em 1em;
 	max-height: 12em;
 	max-width: 8em;
 	object-fit: cover;
 }
-
 .cardv2-content {
 	display: flex;
 	flex-direction: column;
@@ -333,17 +339,19 @@ aside {
 	padding-bottom: 2em;
 }
 #activities {
+	max-width:22%;
 	padding: 3em 0em 0em 0em;
 }
 #all-card-activities {
 	display: flex;
+	width:100%;
 	margin-bottom: 2em;
 }
 .cardv3-grp {
 	display: flex;
 	flex-direction: column;
 	height: 27em;
-	width: 19em;
+	width: 100%;
 	margin-right: 2.5em;
 	border-radius: 1em;
 	cursor: pointer;
@@ -446,18 +454,16 @@ aside {
 /* FOOTER */
 footer {
 	bottom: 0;
-	min-width: 100%;
-	display: flex;
-	justify-content: center;
-	align-content: flex-start;
+	width: 100%;
 	background-color: #f2f2f2;
-	padding-top: 3em;
-	margin-left: -8em;
+	padding: 3em 0em 3em 0em;
+}
+.footer-links{
+	display: flex;
+	justify-content: space-evenly;
 }
 .text-block {
-	margin-right: 12em;
 	display: flex;
-	padding: 0em 2em 2em 2em;
 	flex-direction: column;
 	line-height: 1em;
 }
@@ -465,9 +471,96 @@ footer a {
 	text-decoration: none;
 	color: black;
 	font-size: 1em;
-	margin-top: 0.5em;
+	margin-top: 0.7em;
 }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 1215px) and (max-width: 1360px) {
+	body {
+		zoom: .9;
+	}
+}
+@media screen and (min-width: 1100px) and (max-width: 1215px) {
+	body {
+		zoom: .8;
+	}
+}
+@media screen and (min-width: 740px) and (max-width: 1100px) {
+	
+	header {
+		justify-content: flex-start;
+		max-width: 100%;
+		padding: 1em 0em 0em 0em;
+		width: 100%;
+	}
+	#wrapper {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	#filters {
+		max-width: 100%;
+	}
+	#accommodations {
+		flex-direction: column-reverse;
+		justify-content: flex-start;
+		width: 100%;
+		margin:auto;
+	}
+	aside {
+		width: 92%;
+		max-width: none;
+	}
+	#all-card-popular{
+		flex-direction: row;
+	}
+	.cardv2-grp {
+		max-height: 8em;
+		min-height: 8em;
+		margin-top: 1em;
+		min-width: 95%;
+	}
+	.cardv2-img {
+		border-radius: 1em 0em 0em 1em;
+		max-height: 8em;
+		max-width: 8em;
+		object-fit: cover;
+	}
+	#activities {
+		width:auto;
+		margin:0;
+		max-width:100%;
+	}
+	#findings {
+		width:95%;
+		padding:0;
+		border-radius: 1em;
+		background-color: #ffffff;
+		margin:2em 0em 0em 0em;
+	}
+	#findings {
+		padding: 2.8em 0em 2em 2.5em;
+		border-radius: 1em;
+		background-color: #f2f2f2;
+		margin-right: 0;
+	}
+	/* Card Findings */
+	#all-card-findings {
+		display: flex;
+		flex-wrap: wrap;
+		flex-grow: 5;
+		width: 95%;
+	}
+	.card-grp {
+		margin: 1em 1em 0em 0em;
+		min-height: 11em;
+		min-width: none;
+		width:45%;
+	}
+	.card-img {
+		max-width: none;
+	}
+	
+}
+
+@media screen and (max-width: 740px) {
 /* Header */
 	header {
 		flex-wrap: wrap;
@@ -479,19 +572,42 @@ footer a {
 		margin: 0 auto;
 	}
 	header :nth-child(2) {
+		flex-basis: 100%;
 		order: 1;
 	}
 	#inscription {
-		padding: 2em;
+		margin:2em 2em 2em 2em;
+	}
+	nav{
+		flex:1;
+		width:100%;
+		margin:0 auto;
 	}
 	nav ul{
-		max-width: 100%;
-		padding:0em 0em 0em 0em;
+		width:100%;
+		margin:0 auto;
+		padding-bottom:3em;
 	}
 	nav li {
-		max-width: 100%;
-		padding:0em 10em 3em 0em;
+		width:100%;
+		margin:0 auto;
+		padding:0em;
 	}
+	nav a {
+		color: black;
+		text-decoration: none;
+		border-bottom: 0.2em solid grey;
+		max-width:95%;
+		border-top:0;
+		padding:0em 40% 1em 40%;		
+	}
+	nav a:hover, nav a:focus {
+		color: #0065fc;
+		border-top:0;
+		border-bottom: 0.2em solid #0065fc;    
+	}
+	
+
 /* Search bar */
 	.button {
 		position: relative;
@@ -513,11 +629,13 @@ footer a {
 	}
 /* Filters */
 	#filters {
-		margin-left: 1em;
-		max-width: 100%;
+		margin:0em 0em 0em 1em;
+		max-width: 95%;
 	}
 	#buttons-filters {
 		flex-wrap: wrap;
+		padding:0;
+		margin: 1em 0em 1em 0em;
 	}
 	.filter-title {
 		padding-right: 80%;
@@ -535,24 +653,28 @@ footer a {
 		width:100%;
 	}
 	#accommodations {
-
 		flex-direction: column-reverse;
 		width: 100%;
+		margin:auto;
 	}
 	#findings {
-		width:90%;
-		padding-left: 1em;
+		width:95%;
+		padding:0;
 		border-radius: 1em;
 		background-color: #ffffff;
+		margin:0;
+		margin:auto;
 	}
 /* Card Findings */
 	#all-card-findings {
 		flex-direction: column;
 		width:100%;
+		margin:auto;
+		margin:0;
 	}
 	.card-grp{
-		margin-top:1em;
-		margin-right:0;
+		margin:1em 0em 0em 0em;
+		width: 95%;
 	}
 	.card-grp:hover,
 	.card-grp:focus {
@@ -560,7 +682,7 @@ footer a {
 	}
 	.card-img {
 		max-height: 6em;
-		max-width: 500px;
+		max-width: 100%;
 	}
 	.card-txt {
 		color: black;
@@ -569,34 +691,42 @@ footer a {
 /* MOST POPULAR */
 	aside{
 		border-radius: 0em;
+		width:100%;
+		max-width: none;
+		min-width: none;
+		padding:0em;
+		margin: 1em 0em 1em 0em;
+	}
+	#title {
+		padding: 1em;
 	}
 /* Card Popular */
 	.cardv2-grp {
-		margin-top: 0.8em;
-		width:100%;
+		margin:0em 0em 1em 1em;
+		width:90%;
 	}
 /*ACTIVITES*/
 	#activities {
-		width:90%;
-		margin-left:2em;
+		width:auto;
+		margin:auto;
+		max-width:90%;
 	}
 	#all-card-activities {
 		flex-direction: column;
 		justify-content: space-evenly;
 		flex-wrap: wrap;
 		height: auto;
-		width: 90%;
+		width: 100%;
 	}
 	.cardv3-grp {
 		height: 12em;
 		width:100%;	
 		margin-bottom:1em;	
 	}
-
 	.cardv3-img {
 		height: 12em;
 		width:100%;	
-		object-position: -0em -1em;
+		object-position: 0em -5em;
 	}
 /* Small */
 	.cardv3-grp-small {
@@ -616,14 +746,17 @@ footer a {
 		margin-bottom:2em;
 	}
 	.cardv3-img-small {
-		height: 12em;
-		width:100%;	
-		object-position: -0em -1em;
+		height: auto;
+		width:100%;
+		min-width: 90%;	
+		object-position: -0em -25em;
 	}
 	.cardv3-img-smallv2 {
-		height: 12em;
-		width:100%;	
-		object-position: -0em -1em;
+		height: auto;
+		width:100%;
+		margin:0 auto;
+		min-width: 90%;	
+		object-position: 0em -5em;
 	}
 /* Medium */
 	.cardv3-grp-medium {
@@ -634,17 +767,17 @@ footer a {
 		width:100%;	
 		margin-bottom: 1em;
 	}
-
 	.cardv3-img-medium {
-		width:100%;	
+		width:100%;
+		min-width: 90%;
+		object-position: -0em -7em;
 	}
-/* FOOTER */
-footer {
-
+@media screen and (max-width: 600px) {
+	/* FOOTER */
+.footer-links {
 	flex-direction: column;
-	background-color: #f2f2f2;
-	margin-left: 0;
+	margin-left: 2em;
 }
 .text-block {
-	margin-right: 0em;
+	margin-bottom: 1.5em;
 }
