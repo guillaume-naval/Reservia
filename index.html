@@ -38,10 +38,10 @@
 					<label class="grey-box-icon">
 						<img class="icon-black" alt="map-marker" src="images/icons/map-marker.svg"/>
 					</label>
-					<form method="post" action="traintement.php">
+					<form method="post" action="search_lodgings.php">
 						<input type="search" id="site-search" placeholder="Marseille, France" />
 						<button class="button" type="submit">
-							<p class="search-txt">Rechercher</p>
+							<span class="search-txt">Rechercher</span>
 							<img class="icon-search" alt="icon-search" src="images/icons/search.svg"/>
 						</button>
 					</form>
@@ -87,9 +87,8 @@
 			<main>
 				<!--  Accommodations (Hébergements) -->
 
-				<section id="accommodations">
+				<div id="accommodations">
 					<!-- Findings (Résultats hébergements) -->
-
 					<section id="findings">
 						<h2>Hébergements à Marseille</h2>
 						<div id="all-card-findings">
@@ -97,8 +96,7 @@
 								<img
 									class="card_find-img"
 									src="images/hebergements/4_small/la_cannebiere.jpg"
-									alt="Auberge La Cannebière"
-								/>
+									alt="Auberge La Cannebière"/>
 								<div class="card_find-content">
 									<h2 class="card-txt">Auberge la Cannebière</h2>
 									<h3 class="card-txt">
@@ -136,11 +134,8 @@
 							</article>
 
 							<article class="card_find-grp">
-								<img
-									class="card_find-img"
-									src="images/hebergements/4_small/les_mouettes.jpg"
-									alt="Hôtel Les mouettes"
-								/>
+								<img class="card_find-img" src="images/hebergements/4_small/les_mouettes.jpg"
+									alt="Hôtel Les mouettes"/>
 								<div class="card_find-content">
 									<h2 class="card-txt">Hôtel Les mouettes</h2>
 									<h3 class="card-txt">
@@ -157,11 +152,8 @@
 								</div>
 							</article>
 							<article class="card_find-grp">
-								<img
-									class="card_find-img"
-									src="images/hebergements/4_small/de_la_mer.jpg"
-									alt="Hôtel de la mer"
-								/>
+								<img class="card_find-img" src="images/hebergements/4_small/de_la_mer.jpg"
+									alt="Hôtel de la mer"/>
 								<div class="card_find-content">
 									<h2 class="card-txt">Hôtel de la mer</h2>
 									<h3 class="card-txt">
@@ -284,7 +276,7 @@
 							</article>
 						</div>
 					</aside>
-				</section>
+				</div>
 
 				 
 				<!--  Activités  -->
@@ -329,7 +321,7 @@
 								<img class="card_act-img"
 									src="images/activites/2_large/parc_national_des_calanques.jpg"
 									alt="Parc National des Calanques"
-									style="filter: brightness(130%);-webkit-filter: brightness(130%);"/>
+									/>
 							</div>
 							<div class="card_act-content">
 								<h2 class="card_act-txt">Parc National des Calanques</h2>
@@ -364,27 +356,24 @@
 		</div>
 		<!-- Footer Contact  -->
 		<footer>
-			<section class="footer-links">
-				<article id="about" class="text-block">
-					<h2>À propos</h2>
-					<br />
+			<div class="footer-links">
+				<div id="about" class="text-block">
+					<h2 class="footer-titles">À propos</h2>
 					<a href="#">Fonctionnement du site</a>
 					<a href="#">Conditions génèrales de vente</a>
 					<a href="#">Données et confidentialité</a>
-				</article>
+				</div>
 				<article id="lodging" class="text-block">
-					<h2>Nos hébergements</h2>
-					<br />
+					<h2 class="footer-titles">Nos hébergements</h2>
 					<a href="#">Charte qualité</a>
 					<a href="#">Soumettre votre hôtel</a>
 				</article>
-				<article id="support" class="text-block">
-					<h2>Assistance</h2>
-					<br />
+				<div id="support" class="text-block">
+					<h2 class="footer-titles">Assistance</h2>
 					<a href="#">Centre d'aide</a>
 					<a href="#">Nous contacter</a>
-				</article>
-			</section>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>
