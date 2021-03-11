@@ -484,6 +484,71 @@ footer a {
 		width:64em;
 	}
 }
+
+@media screen and (max-width: 1100px) {
+	/*ACTIVITES*/
+	#activities {
+		width:auto;
+		margin:auto;
+		max-width:90%;
+	}
+	#all-card-activities {
+		flex-direction: column;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		height: auto;
+		width: 100%;
+	}
+	.card_act-grp {
+		height: 12em;
+		width:100%;	
+		margin-bottom:1em;	
+	}
+	.card_act-img {
+		height: 100%;
+		width:100%;	
+	}
+/* Small */
+	.card_act-grp-small {
+		height: 24em;
+		width:100%;	
+		margin-bottom: 2em;
+	}
+	.card_act-small {
+		height: 12em;
+		width:100%;	
+		margin-bottom: 1em;	
+	}
+	.card_act-smallv2 {
+		height: 12em;
+		width:100%;	
+		margin-top:0;
+		margin-bottom:2em;
+	}
+	.card_act-img-small {
+		height: 100%;
+		width:100%;
+		min-width: 90%;
+	}
+	.card_act-img-smallv2 {
+		height: 100%;
+		width:100%;
+		min-width: 90%;	
+	}
+/* Medium */
+	.card_act-grp-medium {
+		height: 24em;
+		width:100%;	
+	}
+	.card_act-medium {
+		width:100%;	
+		margin-bottom: 1em;
+	}
+	.card_act-img-medium {
+		width:100%;
+		min-width: 90%;
+	}
+}
 @media screen and (min-width: 740px) and (max-width: 1100px) {
 	
 	header {
@@ -557,70 +622,6 @@ footer a {
 		max-width: 100%;
 	}	
 }
-@media screen and (max-width: 1100px) {
-	/*ACTIVITES*/
-	#activities {
-		width:auto;
-		margin:auto;
-		max-width:90%;
-	}
-	#all-card-activities {
-		flex-direction: column;
-		justify-content: space-evenly;
-		flex-wrap: wrap;
-		height: auto;
-		width: 100%;
-	}
-	.card_act-grp {
-		height: 12em;
-		width:100%;	
-		margin-bottom:1em;	
-	}
-	.card_act-img {
-		height: 100%;
-		width:100%;	
-	}
-/* Small */
-	.card_act-grp-small {
-		height: 24em;
-		width:100%;	
-		margin-bottom: 2em;
-	}
-	.card_act-small {
-		height: 12em;
-		width:100%;	
-		margin-bottom: 1em;	
-	}
-	.card_act-smallv2 {
-		height: 12em;
-		width:100%;	
-		margin-top:0;
-		margin-bottom:2em;
-	}
-	.card_act-img-small {
-		height: 100%;
-		width:100%;
-		min-width: 90%;
-	}
-	.card_act-img-smallv2 {
-		height: 100%;
-		width:100%;
-		min-width: 90%;	
-	}
-/* Medium */
-	.card_act-grp-medium {
-		height: 24em;
-		width:100%;	
-	}
-	.card_act-medium {
-		width:100%;	
-		margin-bottom: 1em;
-	}
-	.card_act-img-medium {
-		width:100%;
-		min-width: 90%;
-	}
-}
 @media screen and (max-width: 740px) {
 /* Header */
 		header {
@@ -660,7 +661,8 @@ footer a {
 		}
 		nav a {
 			color: black;
-			text-decoration: none;			
+			text-decoration: none;
+			border-top:0;			
 		}
 		nav a:hover, nav a:focus {
 			border-top:0;
