@@ -1,5 +1,3 @@
-Projet 2 "Reservia", Openclassrooms.
-
 # Reservia
 
 Deuxième projet du parcours développeur web chez OpenClassrooms : "Transformez une maquette en site Web"
