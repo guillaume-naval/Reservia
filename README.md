@@ -20,6 +20,10 @@ Le projet est hébergé sur Github pages sur le lien suivant : https://guillaume
 - Les couleurs : bleu #0065FC - bleu clair #DEEBFF - gris #F2F2F2
 - La police : ["Raleway"](https://fonts.google.com/specimen/Raleway)
 
+<img src="https://user-images.githubusercontent.com/78444291/142157034-aecbc656-8dd7-40ed-a8ed-a09ad8e55448.png" width="60%" height="60%"> <img src="https://user-images.githubusercontent.com/78444291/142157052-379c2963-2268-4f3a-ad32-12dc0d4967f5.png" height="800">
+
+
+
 ## Cahier des charges
 - L'integration doit se faire en HTML5 & CSS3, sans framework (bootstrap par exemple)
 - Le champ de recherche doit être un champ de saisie, dont le texte peut être édité. La fonctionnalité de recherche ne doit pas être implémenté pour autant.
